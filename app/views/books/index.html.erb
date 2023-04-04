@@ -23,7 +23,7 @@
 
 <%= link_to "Show", book_path(book.id) %>
 <%= link_to "Edit", edit_book_path(book.id) %>
-<%= link_to "Destroy","date-confirm" => "Are you sure?" %>
+<%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
 <% end %>
 
 </div>
@@ -33,7 +33,7 @@
     <h2>New book<h2>
 
 
-       <% if @book.errors.any? %>
+    <% if @book.errors.any? %>
     <%= @book.errors.count %> errors prohibited this book from being saved:
     <ul>
       <% @book.errors.full_messages.each do |message| %>

@@ -9,3 +9,6 @@
     <p><%= @book.body %></p>
   </div>
 </div class="show">
+
+<%= link_to "Edit",edit_book_path(@book.id) %>
+<%= link_to "Back",books_path %>
