@@ -21,10 +21,10 @@
     </tbody>
   </table>
 
-<%= link_to "Show", book_path(book.id) %>
-<%= link_to "Edit", edit_book_path(book.id) %>
-<%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
-<% end %>
+    <%= link_to "Show", book_path(book.id) %>
+    <%= link_to "Edit", edit_book_path(book.id) %>
+    <%= link_to "Destroy", book_path(book.id), method: :delete, "data-confirm" => "本当に削除しますか？" %>
+    <% end %>
 
 </div>
 
@@ -45,12 +45,17 @@
 
   <%= form_with model: @book do |f| %>
 
-    <p>Title</p>
-    <%= f.text_field:title %>
-
-    <p>Body</p>
-    <%= f.text_area:body %>
-    <%= f.submit 'Create Book' %>
+    <div class="new-area">
+      <div class="new-title">
+        <p>Title</p>
+        <p><%= f.text_field:title %></p>
+      </div>
+      <div class="new-body">
+        <p>Body</p>
+        <p><%= f.text_area:body %></p>
+        <p><%= f.submit 'Create Book' %></p>
+      </div>
+    </div>
   </div>
 
   <% end %>

@@ -53,3 +53,17 @@
 .index-all {
   padding-bottom:30px;
 }
+
+.show{
+  padding:30px;
+}
+
+.show-title{
+  padding-bottom:30px;
+  padding-left:30px;
+}
+
+.show-body{
+  padding-bottom:30px;
+  padding-left:30px;
+}
