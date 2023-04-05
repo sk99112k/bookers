@@ -54,6 +54,12 @@
   padding-bottom:30px;
 }
 
+td{
+  padding-bottom:10px;
+  padding-right:6px;
+  padding-left:6px;
+}
+
 .show{
   padding:30px;
 }
