@@ -67,3 +67,27 @@
   padding-bottom:30px;
   padding-left:30px;
 }
+
+.show-push{
+  display:inline-block;
+}
+
+.show-list h4{
+  display:inline-block;
+}
+
+.edit {
+  padding:30px;
+}
+
+.edit-title{
+  padding-bottom:15px;
+}
+
+.edit-body{
+  padding-bottom:15px;
+}
+
+.edit-update{
+  padding-bottom:15px;
+}
